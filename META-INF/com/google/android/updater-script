@@ -325,6 +325,12 @@ set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "capabiliti
 show_progress(0.020000, 10);
 run_program("/tmp/install/bin/backuptool.sh", "restore");
 show_progress(0.050000, 5);
+package_extract_file("logo.bin", "/dev/block/platform/msm_sdcc.1/by-name/logo");
+unmount("/system");
+mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system", "");
+package_extract_dir("supersu", "/tmp/supersu");
+run_program("/sbin/busybox", "unzip", "/tmp/supersu/supersu.zip", "META-INF/com/google/android/*", "-d", "/tmp/supersu");
+run_program("/sbin/busybox", "sh", "/tmp/supersu/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/supersu/supersu.zip");
+unmount("/system");
 package_extract_file("boot.img", "/dev/block/platform/msm_sdcc.1/by-name/boot");
 show_progress(0.200000, 10);
-unmount("/system");
