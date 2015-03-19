@@ -1,0 +1,93 @@
+===================================
+Since Tue Mar 17 10:16:29 UTC 2015
+===================================
+
+   * frameworks/base
+4d813f8 Factory reset: Allow passing wipe_media to recovery
+bd4b190 SystemUI: CellularTile support multi-sim
+701bc3e Lockscreen visualizer: Disable out animation
+
+   * kernel/motorola/msm8226
+9a630e7 mm: Fix NULL pointer dereference in madvise(MADV_WILLNEED) support
+90898d9 vfs: read file_handle only once in handle_to_path
+
+   * packages/apps/CMFileManager
+05ddc9c CMFileManager: protect code path for access mSdBookmarks
+
+   * packages/apps/Dialer
+158fc5f Added Reverse Lookup Gebeld (NL)
+
+   * packages/apps/Settings
+26435ea Factory reset: Always show the "delete media" checkbox
+b77cddc Sound settings: remove vibrate category on devices that dont support it
+044b638 Protected Apps: remove incorrect header title
+
+   * packages/apps/SetupWizard
+ed5d467 SetupWizard: Better handling of launching into other activities
+836f867 Disable theme components for secondary users
+
+   * packages/apps/Trebuchet
+368c91b Trebuchet: protect update path for widgetpreviews db
+5482c2f Trebuchet: disable search bar when there are no search activities
+
+   * packages/inputmethods/LatinIME
+559c5fd Fix suggestions text padding (AOSP Keyboard)
+
+   * vendor/cm
+dc699fb sepolicy: Permissions for userinit
+
+===================================
+Since Sun Mar 15 21:04:57 UTC 2015
+===================================
+
+   * device/motorola/msm8226-common
+19bcc94 msm8226-common: Enable releasetools
+9a2ab63 msm8226-common: Add Bootloader Assert
+81b776d msm8226-common: cmhw: Add high brightness (sunlight) mode
+c1d6ba9 msm8226-common: Configure interactive governor for input boost
+cb8c843 msm8226-common: Add PCC calibration interface
+
+   * external/skia
+2e87b69 Bring back NEON optimized blitter S32_Opaque_D32_filter_DX
+
+   * frameworks/base
+3b4c38c Do not start music app when headset is unplugged
+
+   * hardware/qcom/display-caf/msm8916
+b01ae24 hwc: Add secure display attribute
+
+   * kernel/motorola/msm8226
+4bb52ab msm: MMI: Enable CPU input boost for falcon/peregrine/titan
+90600f5 video: mdss: Color temperature interface using PCC
+
+   * packages/apps/Browser
+3db546f Revert "Fix the smart search pattern."
+
+   * packages/apps/Calculator
+6447be0 Limit history expressions to a single line.
+
+   * packages/apps/Calendar
+8d3bd6c Calendar: support ACTION_VIEW instead of ACTION_SEND
+
+   * packages/apps/Dialer
+1b3a022 Move smart dialer initialization to onStart().
+
+   * packages/apps/InCallUI
+2a181b8 InCallUI: Adjust dimens for hdpi
+
+   * packages/apps/Mms
+98b5989 Mms: open VCal files instead of trying to send them
+
+   * packages/apps/PhoneCommon
+a3ac20d PhoneCommon: Adjust dimens for hdpi
+
+   * packages/apps/Trebuchet
+b4b01cd Trebuchet: fix live settings bug
+
+   * vendor/cm
+8df987a Add USMobile (MVNO) apn
+b62da1e apn: Add LG U+ LTE APN
+6ed255d Add additional APNs for US Cellular
+23c48f6 vendor:cm: Add Moto E contributors
+2b99918 Fix default Alarm tone
+
